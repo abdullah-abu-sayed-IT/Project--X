@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Abu Sayed | Aspiring Python & Web Developer</title>
+    <meta name="description" content="Abdullah Abu Sayed - Aspiring Software Developer from Sylhet, Bangladesh. Passionate about Python, DSA, Web Development. Preparing for Bachelor's in IT, Australia.">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #6366f1;
+            --accent: #38bdf8;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #e2e8f0;
+            --gray: #94a3b8;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: var(--light);
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--accent); }
+
+        header {
+            padding: 180px 20px 100px;
+            text-align: center;
+            background: linear-gradient(to bottom, #1e293b, var(--darker));
+        }
+        .profile-img {
+            width: 150px; height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--primary);
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        .tagline { font-size: 1.4rem; color: var(--gray); margin-bottom: 1rem; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 80px 0; }
+        h2 {
+            color: var(--primary);
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 80px; height: 4px;
+            background: var(--primary);
+            position: absolute;
+            bottom: -15px; left: 50%; transform: translateX(-50%);
+        }
+
+        .projects-grid, .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #334155;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content { padding: 1.5rem; }
+        .card h3 { color: var(--accent); margin-bottom: 0.8rem; }
+        .tech-tags { margin: 1rem 0; font-size: 0.9rem; }
+        .tech-tags span {
+            background: #334155;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #4f46e5; }
+
+        .contact { text-align: center; background: var(--darker); padding: 100px 20px; }
+        .social a { font-size: 2rem; margin: 0 1rem; color: var(--gray); transition: color 0.3s; }
+        .social a:hover { color: var(--accent); }
+
+        footer { text-align: center; padding: 3rem; color: var(--gray); background: #000; }
+
+        @media (max-width: 768px) {
+            header { padding: 140px 15px 80px; }
+            h1 { font-size: 2.8rem; }
+            nav a { margin: 0 1rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="about">
+        <div class="container">
+            <!-- তোমার personal photo এখানে add করো (GitHub / imgur link বা local file) -->
+            <img src="https://via.placeholder.com/150?text=Your+Photo" alt="Abdullah Abu Sayed" class="profile-img">
+            <h1>Abdullah Abu Sayed</h1>
+            <p class="tagline">Aspiring Software Developer • Python & DSA Enthusiast • Web Developer • Preparing for Bachelor's in IT, Australia</p>
+            <p>IELTS Academic: 6.0 (Nov 2025) | Sylhet, Bangladesh</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>A Bit About Me</h2>
+            <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem;">
+                I'm a passionate aspiring developer from Sylhet, focusing on Python, Data Structures & Algorithms, and modern web development. 
+                After completing HSC (Science) with strong grades, I'm gearing up for my Bachelor's in IT in Australia. 
+                I love building practical projects and solving real-world problems through code.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="card"><div class="card-content"><h3>Python</h3><p>Programming, Scripting, Problem Solving</p></div></div>
+                <div class="card"><div class="card-content"><h3>JavaScript</h3><p>Interactive Web Apps, DOM Manipulation</p></div></div>
+                <div class="card"><div class="card-content"><h3>HTML & CSS</h3><p>Responsive Design, Front-End Layouts</p></div></div>
+                <div class="card"><div class="card-content"><h3>DSA & Debugging</h3><p>Algorithms, Logical Thinking, Error Handling</p></div></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects I've Built</h2>
+            <div class="projects-grid">
+                <!-- Real-time Weather App -->
+                <div class="card">
+                    <img src="https://www.sourcecodester.com/sites/default/files/images/rems/screenshot-2025-04-08-124048.png" alt="Real-time Weather App">
+                    <div class="card-content">
+                        <h3>Real-time Weather App</h3>
+                        <p>Fetches live weather data via API with city search, icons, temp, humidity & wind.</p>
+                        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+                        <a href="YOUR_LIVE_LINK_HERE" class="btn" target="_blank">Live Demo</a>
+                        <a href="YOUR_GITHUB_REPO" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Quiz App -->
+                <div class="card">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250127101906800664/Screenshot-2025-01-27-101843.png" alt="Quiz App">
+                    <div class="card-content">
+                        <h3>Interactive Quiz App</h3>
+                        <p>MCQ quiz with scoring, timer, and general knowledge/programming questions.</p>
+                        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <a href="YOUR_LIVE_LINK_HERE" class="btn" target="_blank">Live Demo</a>
+                        <a href="YOUR_GITHUB_REPO" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Add more projects similarly: Income Tracker, Mini Calculator, Match-My-Fit, Portfolio itself -->
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Match+My+Fit+Screenshot" alt="Match My Fit">
+                    <div class="card-content">
+                        <h3>Match-My-Fit</h3>
+                        <p>Outfit suggester based on season, skin tone & occasion (upcoming flagship project).</p>
+                        <div class="tech-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                        <a href="#" class="btn">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="card" style="max-width: 700px; margin: 0 auto;">
+                <div class="card-content">
+                    <h3>SCHOLARS HOME, Sylhet</h3>
+                    <p>HSC (Science) • Jan 2023 – Jul 2025 • Grade: 3.75</p>
+                    <p>Focus: Mathematics, Physics, Chemistry, ICT</p>
+                </div>
+            </div>
+            <div class="card" style="max-width: 700px; margin: 2rem auto;">
+                <div class="card-content">
+                    <h3>Borno Computers</h3>
+                    <p>MOS & Web Development • Apr 2023 – Feb 2025</p>
+                    <p>Expert in MS Office + Front-End Basics</p>
+                </div>
+            </div>
+            <p style="text-align:center; margin:2rem 0; font-size:1.1rem;">
+                IELTS Academic: Overall 6.0 (Nov 2025) – Ready for Australian studies!
+            </p>
+        </section>
+
+    </div>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p style="font-size:1.2rem; margin-bottom:2rem;">
+            Open to collaborations, internships, or just chatting about code & tech!
+        </p>
+        <p>Email: <a href="mailto:abdullah.abu.sayed02@gmail.com">abdullah.abu.sayed02@gmail.com</a></p>
+        <div class="social">
+            <a href="https://github.com/abdullah-abu-sayed-IT" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-abu-sayed-02" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/xayeed_07" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Abdullah Abu Sayed • Made with Passion & Code • Sylhet, BD</p>
+    </footer>
+
+</body>
+</html>
